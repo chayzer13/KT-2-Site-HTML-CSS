@@ -1,0 +1,208 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #2c003e;
+  color: white;
+}
+
+header {
+  background: linear-gradient(90deg, #36004b, #2c003e);
+  padding: 20px;
+  text-align: center;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #ffce00;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+header nav ul li a:hover {
+  color: #ffce00;
+}
+
+main {
+  padding: 20px;
+}
+main h2 {
+  font-size: 2rem;
+  color: #ffce00;
+  text-align: center;
+}
+main .products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+main .slider {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+}
+main .slider .slider-container {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+main .slider article {
+  flex: 0 0 100%;
+}
+main .slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #ffce00;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 1;
+}
+main .slider button.prev {
+  left: 10px;
+}
+main .slider button.next {
+  right: 10px;
+}
+main article {
+  background-color: #36004b;
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  flex: 0 0 calc(33% - 20px);
+}
+main article img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 8px;
+}
+main article figcaption {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  color: #eee;
+}
+main article p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+}
+
+.contacts {
+  background-color: #2c003e;
+  border: 2px solid #ffce00;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  color: white;
+  max-width: 1815px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contacts h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffce00;
+}
+.contacts .contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contacts .contact-form label {
+  font-size: 1.1rem;
+}
+.contacts .contact-form input, .contacts .contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+.contacts .contact-form input:focus, .contacts .contact-form textarea:focus {
+  border-color: #ffce00;
+  outline: none;
+}
+.contacts .contact-form button {
+  padding: 10px 15px;
+  background-color: #ffce00;
+  color: #2c003e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+.contacts .contact-form button:hover {
+  background-color: #2c003e;
+  color: #ffce00;
+}
+.contacts p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.promotions {
+  background-color: #36004b;
+  border: 2px solid #ffce00;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  color: white;
+}
+.promotions h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #ffce00;
+}
+.promotions p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #36004b;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+}
+footer a {
+  color: #ffce00;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.slider-color {
+  background: none;
+}/*# sourceMappingURL=style.css.map */

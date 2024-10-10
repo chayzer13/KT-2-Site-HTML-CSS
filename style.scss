@@ -1,0 +1,247 @@
+$dark-purple: #2c003e;
+$light-purple: #36004b;
+$accent-color: #ffce00;
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $dark-purple;
+    color: white;
+}
+
+header {
+    background: linear-gradient(90deg, $light-purple, $dark-purple);
+    padding: 20px;
+    text-align: center;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        color: $accent-color;
+    }
+
+    nav ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: inline;
+            margin: 0 15px;
+
+            a {
+                color: white;
+                text-decoration: none;
+                font-size: 1.2rem;
+
+                &:hover {
+                    color: $accent-color;
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding: 20px;
+
+    h2 {
+        font-size: 2rem;
+        color: $accent-color;
+        text-align: center;
+    }
+
+    .products {
+        display: flex;
+        justify-content: center; 
+        flex-wrap: wrap; 
+        gap: 40px; 
+    }
+
+    .slider {
+        position: relative;
+        overflow: hidden;
+        width: 80%; 
+        margin: 0 auto; 
+
+        .slider-container {
+            display: flex; 
+            transition: transform 0.3s ease-in-out;
+        }
+
+        article {
+            flex: 0 0 100%; 
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $accent-color;
+            border: none;
+            color: white;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 2rem;
+            z-index: 1; 
+
+            &.prev {
+                left: 10px;
+            }
+
+            &.next {
+                right: 10px;
+            }
+        }
+    }
+
+    article {
+        background-color: $light-purple;
+        padding: 15px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        flex: 0 0 calc(33% - 20px); 
+
+        img {
+            max-width: 80%; 
+            height: auto;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #eee;
+        }
+
+        p {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+        }
+    }
+}
+
+.contacts {
+    background-color: $dark-purple; 
+    border: 2px solid $accent-color; 
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    margin-top: 20px; 
+    color: white;
+    max-width: 1815px; 
+    margin-left: auto; 
+    margin-right: auto; 
+
+    h2 {
+        font-size: 2rem; 
+        margin-bottom: 15px; 
+        color: $accent-color; 
+    }
+
+    .contact-form {
+        display: flex; 
+        flex-direction: column; 
+        gap: 15px; 
+
+        label {
+            font-size: 1.1rem; 
+        }
+
+        input, textarea {
+            padding: 10px; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+            font-size: 1rem; 
+            transition: border-color 0.3s; 
+
+            &:focus {
+                border-color: $accent-color; 
+                outline: none; 
+            }
+        }
+
+        button {
+            padding: 10px 15px; 
+            background-color: $accent-color; 
+            color: $dark-purple; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 1rem; 
+            transition: background-color 0.3s; 
+
+            &:hover {
+                background-color: $dark-purple; 
+                color: $accent-color; 
+            }
+        }
+    }
+
+    p {
+        font-size: 1.2rem; 
+        margin-top: 10px; 
+    }
+}
+
+
+
+.promotions {
+    background-color: $light-purple; 
+    border: 2px solid $accent-color; 
+    border-radius: 15px; 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+    margin-top: 20px; 
+    color: white; 
+
+    h2 {
+        font-size: 1.8rem; 
+        margin-bottom: 10px; 
+        color: $accent-color; 
+    }
+
+    p {
+        font-size: 1.2rem; 
+        margin-bottom: 10px; 
+    }
+}
+
+
+footer {
+    background-color: $light-purple;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+
+    a {
+        color: $accent-color;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            display: inline;
+            margin: 0 10px;
+        }
+    }
+}
+
+.slider-color {
+    background: none;
+}
